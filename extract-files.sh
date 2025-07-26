@@ -64,7 +64,10 @@ function blob_fixup {
 	    [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libunwindstack.so" "libunwindstack-v30.so" "${2}"
             ;;
-        vendor/lib/hw/audio.primary.mt6785.so|\
+        vendor/lib/hw/audio.primary.mt6785.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libshim_audio.so" "${2}"
+            ;;
         vendor/lib64/hw/audio.primary.mt6785.so)
 	    [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libmedia_helper.so" "libmedia_helper-v30.so" "${2}"
