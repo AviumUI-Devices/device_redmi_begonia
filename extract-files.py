@@ -21,10 +21,6 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/redmi/begonia',
-    'hardware/mediatek',
-    'hardware/mediatek/libmtkperf_client',
-    'hardware/xiaomi',
 ]
 
 
