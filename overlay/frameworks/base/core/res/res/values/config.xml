@@ -144,7 +144,7 @@
          Zone 1:        array[0] <= LUX < array[1]
          ...
          Zone N:        array[N - 1] <= LUX < array[N]
-         Zone N + 1     array[N] <= LUX < infinity
+         Zone N + 1     array[N] <= LUX < lineage
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
