@@ -28,9 +28,6 @@ TARGET_INCLUDE_GOOGLEIME := true
 # TARGET_GOOGLEIME_OVERRIDE_IME := true
 AVIUM_MAINTAINER := wuxinG90
 
-# Inherit some extras stuff
-$(call inherit-product-if-exists, vendor/extras/extras.mk)
-
 # Fix uses broken libraries
 RELAX_USES_LIBRARY_CHECK := true
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
