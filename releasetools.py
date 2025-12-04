@@ -45,4 +45,7 @@ def OTA_InstallEnd(info):
   info.script.Print("Patching dtbo and vbmeta images...")
   AddImage(info, "IMAGES", "dtbo.img", "/dev/block/platform/bootdevice/by-name/dtbo")
   AddImage(info, "IMAGES", "vbmeta.img", "/dev/block/platform/bootdevice/by-name/vbmeta")
+  
+  info.script.Print("Flashing AOSP recovery...")
+  AddImage(info, "IMAGES", "recovery.img", "/dev/block/platform/bootdevice/by-name/recovery")
   return
