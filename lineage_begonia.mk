@@ -31,6 +31,10 @@ WITH_GMS := true
 TARGET_INCLUDE_GOOGLEIME := true
 TARGET_GOOGLEIME_OVERRIDE_IME := true
 TARGET_SUPPORTS_QUICK_TAP := true
+PRODUCT_NO_CAMERA := true
+
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/MiuiCameraLeica/config.mk)
 
 # Fix uses broken libraries
 RELAX_USES_LIBRARY_CHECK := true
