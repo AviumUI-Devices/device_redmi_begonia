@@ -17,18 +17,20 @@ $(call inherit-product, device/redmi/begonia/device.mk)
 
 # Inherit some common lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_ENABLE_BLUR := true
 
 # AviumUI Specific Flags
-AVIUM_BUILDTYPE := Release
 AVIUM_IS_OFFICIAL := true
 AVIUM_VERSION_APPEND_TIME_OF_DAY := false
+AVIUM_SETTINGS_SOC_MODEL_NAME := Mediatek Helio G90T
+AVIUM_SETTINGS_DEVICE_CODENAME := begonia
+AVIUM_FORCE_SET_FAKE_PROP := true
+AVIUM_MAINTAINER := wuxinG90
+TARGET_FORCE_ENABLE_BLUR := true
+TARGET_USES_GSANS := true
 WITH_GMS := true
-TARGET_GMS_TYPE := FULL
 TARGET_INCLUDE_GOOGLEIME := true
 TARGET_GOOGLEIME_OVERRIDE_IME := true
-AVIUM_MAINTAINER := wuxinG90
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Fix uses broken libraries
 RELAX_USES_LIBRARY_CHECK := true
