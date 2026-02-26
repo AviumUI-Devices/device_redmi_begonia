@@ -15,3 +15,9 @@ type sysfs_mtk_gpufreq, fs_type, sysfs_type;
 
 # PPS
 type pps_socket, file_type;
+
+# Purpose : mtk EM Power debug_log setting
+type sysfs_spm, fs_type, sysfs_type;
+type sysfs_mtkfb, sysfs_type, fs_type;
+type sysfsts_novatek, sysfs_type, fs_type;
+type sysfs_battery_supply, sysfs_type, fs_type;
