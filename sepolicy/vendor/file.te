@@ -21,3 +21,4 @@ type sysfs_spm, fs_type, sysfs_type;
 type sysfs_mtkfb, sysfs_type, fs_type;
 type sysfsts_novatek, sysfs_type, fs_type;
 type sysfs_battery_supply, sysfs_type, fs_type;
+type sysfs_bus, fs_type, sysfs_type;
