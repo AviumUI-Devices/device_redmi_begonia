@@ -12,3 +12,17 @@ vendor.synaptics.fingerprints.interfaces.extensions::IFpCollection            u:
 vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint               u:object_r:hal_fingerprint_hwservice:s0
 vendor.xiaomi.hardware.displayfeature::IDisplayFeature                        u:object_r:hal_displayfeature_hwservice:s0
 vendor.dolby.hardware.dms::IDms                          u:object_r:hal_dms_hwservice:s0
+
+# ATMs hidl
+vendor.mediatek.hardware.camera.atms::IATMs u:object_r:hal_camera_hwservice:s0
+
+# Camera
+vendor.mediatek.hardware.camera.lomoeffect::ILomoEffect u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.ccap::ICCAPControl u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.bgservice::IBGService u:object_r:mtk_hal_bgs_hwservice:s0
+vendor.mediatek.hardware.camera.isphal::IISPModule u:object_r:mtk_hal_bgs_hwservice:s0
+vendor.mediatek.hardware.camera.postproc::IPostDevice u:object_r:mtk_hal_bgs_hwservice:s0
+vendor.mediatek.hardware.camera.advcam::IAdvCamControl u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.callbackclient::IMtkCallbackClient u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.security::ISecureCamera u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.frhandler::IFRHandler u:object_r:hal_camera_hwservice:s0
