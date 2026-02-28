@@ -40,13 +40,6 @@ allow mtk_hal_camera mtk_hal_power_hwservice:hwservice_manager find;
 allow mtk_hal_camera nvram_data_file:lnk_file { read write getattr setattr read create open };
 allow mtk_hal_camera nvdata_file:lnk_file { read write getattr setattr read create open };
 
-# Purpose: Allow camerahalserver to dump debug info to SYS_DEBUG_MTKCAM via aee_aedv.
-# avc: denied { write } for path="/data/vendor/mtklog/aee_exp/temp/db.9oRG8O/SYS_DEBUG_MTKCAM"
-# dev="dm-2" ino=1458278 scontext=u:r:mtk_hal_camera:s0 tcontext=u:object_r:aee_exp_vendor_file:s0
-# tclass=file permissive=0
-allow mtk_hal_camera aee_exp_vendor_file:dir { w_dir_perms };
-allow mtk_hal_camera aee_exp_vendor_file:file { create_file_perms };
-
 # Purpose: Allow mtk_hal_camera to read binder from surfaceflinger
 allow mtk_hal_camera surfaceflinger:fifo_file {read write};
 
